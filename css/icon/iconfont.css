@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3902560 */
+  src: url('iconfont.woff2?t=1676643965185') format('woff2'),
+       url('iconfont.woff?t=1676643965185') format('woff'),
+       url('iconfont.ttf?t=1676643965185') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gamenewgamenew:before {
+  content: "\e64e";
+}
+
+.icon-outline-music-play:before {
+  content: "\e6a9";
+}
+
+.icon-home:before {
+  content: "\e608";
+}
+
+.icon-shijian:before {
+  content: "\e635";
+}
+
+.icon-mofashui:before {
+  content: "\e6c6";
+}
+
+.icon-shengdanjieicon-:before {
+  content: "\e609";
+}
+
+.icon-shengdanjieicon-1:before {
+  content: "\e60b";
+}
+
+.icon-Magic-Hat:before {
+  content: "\e800";
+}
+
+.icon-show-hat-magician-:before {
+  content: "\e69c";
+}
+
+.icon-tongzhifuben:before {
+  content: "\e66f";
+}
+
+.icon-magic:before {
+  content: "\ea1f";
+}
+
+.icon-anemo:before {
+  content: "\e60d";
+}
+
+.icon-cryo:before {
+  content: "\e60e";
+}
+
+.icon-dendro:before {
+  content: "\e60f";
+}
+
+.icon-electro:before {
+  content: "\e610";
+}
+
+.icon-geo:before {
+  content: "\e611";
+}
+
+.icon-hydro:before {
+  content: "\e612";
+}
+
+.icon-pyro:before {
+  content: "\e613";
+}
+

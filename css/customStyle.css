@@ -1,0 +1,144 @@
+:root {
+	--trans-light: rgba(255, 255, 255, 0.77);
+	--trans-dark: rgba(25, 25, 25, 0.88);
+	--border-style: 1.85px solid rgb(220, 197, 223);
+	--backdrop-filter: blur(5px) saturate(150%);
+  }
+  
+  /* 首页文章卡片 */
+  #recent-posts > .recent-post-item {
+	background: var(--trans-light);
+	border-radius: 25px;
+	border: var(--border-style);
+  }
+  
+  /* 首页侧栏卡片 */
+  #aside-content .card-widget {
+	background: var(--trans-light);
+	border-radius: 18px;
+	border: var(--border-style);
+  }
+  
+  /* 文章页、归档页、普通页面 */
+  div#post,
+  div#page,
+  div#archive {
+	background: var(--trans-light);
+	border: var(--border-style);
+	border-radius: 25px;
+	--border-style: 2px solid rgb(183, 155, 231);
+  }
+
+  
+
+  /* 导航栏 */
+  #page-header.nav-fixed #nav {
+	background: rgba(255, 255, 255, 0.88);
+  }
+  
+  [data-theme="dark"] #page-header.nav-fixed #nav {
+	background: rgba(0, 0, 0, 0.7) !important;
+  }
+  
+  /* 夜间模式遮罩 */
+  [data-theme="dark"] #recent-posts > .recent-post-item,
+  [data-theme="dark"] #aside-content .card-widget,
+  [data-theme="dark"] div#post,
+  [data-theme="dark"] div#archive,
+  [data-theme="dark"] div#page {
+	background: var(--trans-dark);
+  }
+  
+  
+  /* 页脚页头遮罩透明 */
+  #page-header {
+	background: transparent !important;
+  }
+  #page-header::before {
+	background: transparent !important;
+  }
+  #footer {
+	background: transparent !important;
+  }
+  #footer::before {
+	background: transparent !important;
+  }
+  
+  /* 阅读模式 */
+  .read-mode #aside-content .card-widget {
+	background: rgba(71, 4, 29, 0.5) !important;
+  }
+  .read-mode div#post {
+	background: rgba(71, 4, 29, 0.5) !important;
+  }
+  
+  /* 夜间模式下的阅读模式 */
+  [data-theme="dark"] .read-mode #aside-content .card-widget {
+	background: rgba(25, 25, 25, 0.9) !important;
+	color: #ffffff;
+  }
+  [data-theme="dark"] .read-mode div#post {
+	background: rgba(25, 25, 25, 0.9) !important;
+	color: #ffffff;
+  }
+
+
+
+
+/*顶部加载进度条*/
+.pace {
+	pointer-events: none;
+	user-select: none;
+	z-index: 2;
+	position: fixed;
+	margin: auto;
+	top: 4px;
+	left: 0;
+	right: 0;
+	height: 8px;
+	border-radius: 8px;
+	width: 6rem;
+	background: #eaecf2;
+	overflow: hidden;
+  }
+  
+  .pace-inactive .pace-progress {
+	opacity: 0;
+	transition: 0.3s ease-in;
+  }
+  
+  .pace.pace-inactive {
+	opacity: 0;
+	transition: 0.3s;
+	top: -8px;
+  }
+  
+  .pace .pace-progress {
+	box-sizing: border-box;
+	transform: translate3d(0, 0, 0);
+	position: fixed;
+	z-index: 2;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 100%;
+	height: 100%;
+	width: 100%;
+	background: #49b1f5;
+	background: linear-gradient(
+	  to right,
+	  rgb(18, 194, 233),
+	  rgb(196, 113, 237),
+	  rgb(246, 79, 89)
+	);
+	animation: gradient 2s ease infinite;
+	background-size: 200%;
+  }
+
+#nav-right {
+	flex: 1 1 auto;
+	justify-content: flex-end;
+	margin-left: auto;
+	display: flex;
+	flex-wrap: nowrap;
+}

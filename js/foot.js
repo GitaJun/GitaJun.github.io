@@ -11,7 +11,7 @@ $(document).ready(function(e){
 function show_date_time(){
 $('.framework-info').html('魔法已引导 <span id="span_dt_dt" style="color: #fff;"></span>');
 window.setTimeout("show_date_time()", 1000);
-BirthDay=new Date("2/19/2023 0:0:0");
+BirthDay=new Date("2/21/2023 17:0:0");
 today=new Date();
 timeold=(today.getTime()-BirthDay.getTime());
 sectimeold=timeold/1000
